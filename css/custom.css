@@ -1,0 +1,82 @@
+.ox {
+  margin: 0 auto;
+  width: 200px;
+  height: 510px;
+  position: relative;
+}
+.box {
+  height: 75px;
+  width: 75px;
+  background: rgb(149, 10, 40);
+  background: radial-gradient(
+    circle,
+    rgba(149, 10, 40, 1) 0%,
+    rgba(70, 0, 0, 1) 100%
+  );
+  background-image: url("../silly_putty.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  /* border-radius: 50%; */
+  animation: bounce 1s linear infinite;
+}
+
+/* .shadow {
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  bottom: 30px;
+  width: 30px;
+  height: 8px;
+  border-radius: 50%;
+  filter: blur(1px);
+  background: rgb(61, 61, 61);
+  animation: bounceShadow 2s linear infinite;
+} */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(400px) scale(1, 1.6);;
+  }
+  55% {
+    transform: translateY(400px) scale(1.25);
+  }
+  60% {
+    transform: translateY(330px) scale(1, 1.6);
+  }
+  90% {
+    transform: translateY(75px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+/* @keyframes bounceShadow {
+  0% {
+    width: 30px;
+    background: rgb(124, 124, 124);
+  }
+  50% {
+    width: 75px;
+    filter: blur(0.5px);
+    background: rgb(34, 34, 34);
+  }
+  55% {
+    width: 75px;
+  }
+  60% {
+    width: 65px;
+  }
+  90% {
+    width: 35px;
+  }
+  100% {
+    width: 30px;
+    background: rgb(124, 124, 124);
+  }
+} */
