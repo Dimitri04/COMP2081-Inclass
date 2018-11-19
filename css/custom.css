@@ -1,8 +1,9 @@
 .ox {
   margin: 0 auto;
   width: 200px;
-  height: 510px;
+  height: 457px;
   position: relative;
+  border-bottom: 5px solid black;
 }
 .box {
   height: 75px;
